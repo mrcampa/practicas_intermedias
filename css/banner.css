@@ -1,0 +1,73 @@
+.banner_azul_celeste{
+    height: 100vh; /* El banner toma el 100% del alto de la pantalla*/ 
+    background-attachment: fixed; /* Para decir que la imagen de fondo se quede fija*/ 
+    background-position: center; /* Centra la imagen */ 
+    background-repeat: no-repeat; /* para que la imagen no se repita */ 
+    background-size: cover; /* toma toda la imagen */ 
+    background-image: url("../img/fondo.jpg"); /*coloca la imagen en el fondo*/ 
+}
+
+.sombra{
+    position: absolute; /* El contenido queda flotando con respecto a su padre */
+    left: 50%; /* De la izquierda */ 
+    top: 50%; /* De arriba */ 
+    -ms-transform: translate(-50%,-50%); /* linea del transform para ie9 */ 
+    -webkit-transform: translate(-50%,-50%); /* linea del transform para edge, safari, etc */ 
+    transform: translate(-50%,-50%); /* alinea el centro del elemento con el centro de su elemento primario */
+    padding: 20px; /* Agrega espacion entre el contenido y el contenedor */
+    width: 80%;
+    text-align: center; /* alinea el texto al centro */ 
+    background-color: rgba(0,0,0,0.6); /* agrega un fondo negro transparente */ 
+    color: #fff; /* agrega el color de fondo de la letra */ 
+    margin: auto; /* agrega los margenes de manera automatica */ 
+}
+
+.sombra hr{  /* le agrega un nuevo estilo a todos los h1 dentro de la clase "sombra" */ 
+    border-top: 1px solid #fff; /* le da un grosor al hr, lo pone como solido y de color blando */
+}
+
+.sombra h1{
+    font-size: 8vw; /* Renderiza el tamaño de la letra a 8vw de la pagina */ 
+    margin-bottom: 10px; /* siempre coloca un margen de 10px entre el y su elemento interior */ 
+}
+
+.sombra p{
+    font-size: 4vw; /* Renderiza el tamaño de la letra a 8vw de la pagina */ 
+    margin-bottom: 10px; /* siempre coloca un margen de 10px entre el y su elemento interior */ 
+}
+
+.banner_link{
+    margin: 15px; /* Agrega un margen de 15px a los link*/ 
+    position: relative; /* Agrega la posicion con respecto a su padre */ 
+}
+
+.banner_link a{
+    position: relative;
+    display: inline-block; /* coloca en una linea de cuadros la informacion */ 
+    color: #fff; /* agrega el color de fondo de la letra */ 
+    text-decoration: none; /* Elimina las decoraciones del texto */ 
+    border: 1px solid #fff; /* agrega el border del contenedor */
+    padding: 1px; /* Agrega espacion entre el contenido y el contenedor */
+    margin-bottom: 5px; /* siempre coloca un margen de 10px entre el y su elemento interior */ 
+    width: 150px; /* le da un ancho estatico de 150 px */ 
+}
+
+.banner_link a:hover{ /* agrega css, en el evento */
+    background-color: #fff;
+    color: #111; 
+}
+
+.banner_link_animation { /* agrega la animacion :( no se como funciona */ 
+    opacity: 0;
+    animation: inicio 1s; 
+    -webkit-animation: inicio 1s;
+    animation-fill-mode: forwards; 
+}
+
+.banner_link_animation_1{ /* agrega la animacion :( no se como funciona */ 
+    opacity: 0;
+    animation: inicio 1s; 
+    -webkit-animation: inicio 1s;
+    animation-fill-mode: forwards; 
+    animation-delay: 1s;
+}

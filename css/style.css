@@ -1,0 +1,15 @@
+ /*  Selector que toma a todo el documento. 
+*{
+    margin: 0; //Elimina todos los margenes
+    padding: 0;  //Agrega espacion entre el contenido y el contenedor
+    box-sizing: border-box; //Coloca a todos los contenedores como cajas 
+}
+*/
+
+.my_navbar{
+    background-color: rgba(255,255,255,0.7) !important; /*difumina el texto*/ 
+}
+
+.parrafo{
+    padding: 10%;
+}

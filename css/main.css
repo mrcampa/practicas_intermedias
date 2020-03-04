@@ -1,0 +1,94 @@
+.navbar {
+    /*box-shadow: 2px 2px 5px #000; 
+    opacity: 0.9;   barra de difuminacion */
+    background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    color: #28275B;
+}
+
+.main-header {
+    background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
+    /* min-height: 500px; tamanio minimo */
+}
+
+.color-text-1 {
+    color: #28275B;
+}
+
+.color-text-2 {
+    color: #20B8D6;
+}
+
+.col-md-3 .card:hover {
+    transform: translate(-20px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.diplo-1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #28275B;
+}
+
+.card {
+    padding: 5px;
+    background: #28275B;
+    border-radius: 19px;
+}
+
+.card-body h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 116.32%;
+    /* or 16px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-body p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 116.32%;
+    /* or 16px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-body a {
+    position: relative;
+    display: inline-block;
+    /* coloca en una linea de cuadros la informacion */
+    color: #fff;
+    /* agrega el color de fondo de la letra */
+    text-decoration: none;
+    /* Elimina las decoraciones del texto */
+    border: 1px solid #fff;
+    /* agrega el border del contenedor */
+    padding: 1px;
+    /* Agrega espacion entre el contenido y el contenedor */
+    margin-bottom: 5px;
+    /* siempre coloca un margen de 10px entre el y su elemento interior */
+    width: 150px;
+    /* le da un ancho estatico de 150 px */
+}
+
+.card-body a:hover {
+    /* agrega css, en el evento */
+    background: #23B9D7;
+    color: #111;
+}
