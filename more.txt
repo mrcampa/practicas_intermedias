@@ -1,0 +1,11 @@
+Archivo de informacion primaria
+	1. Dentro de la carpeta css se encuentra el style.css que sirve como fuente principal, 
+	el style.css dentro de la carpeta raiz servira posteriormente para incorpor el tema con 
+	wordpress. 
+
+Archivo de informacion adicional 
+
+1. Live Server: 
+    Es un complemento para visual code que nos permite levantar un servidor virtual 
+    con nuestros archivos de prueba, similar a http-server. 
+    
