@@ -18,6 +18,11 @@
     /* min-height: 500px; tamanio minimo */
 }
 
+.section-blue-to-sky {
+    background: linear-gradient(to right, #28275B 0%, #28275B 65%, #D5E3EC 50%, #D5E3EC 100%);
+    /* min-height: 500px; tamanio minimo */
+}
+
 .color-text-1 {
     color: #28275B;
 }
@@ -39,6 +44,64 @@
     line-height: 45px;
     /* identical to box height */
     color: #28275B;
+}
+
+.row-section-bs {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #20B8D6;
+}
+
+.quote-text {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: semi-bold;
+    font-size: 20px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #01BEDB;
+}
+
+.regular-text{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+/*image positioning test
+    relative positions; parenting
+*/
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.son-image1 {
+    position: relative;
+    top: -12px;
+    left: 33px;
+}
+.son-image2 {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+}
+.son-image3 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.son-image4 {
+    position: absolute;
+    top: -80px;
+    left: 390px;
 }
 
 .card {
