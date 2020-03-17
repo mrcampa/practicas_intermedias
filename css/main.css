@@ -104,6 +104,60 @@
     left: 390px;
 }
 
+.son-image-d1-1 {
+    position: absolute;
+    top: -80px;
+    left: 845px;
+}
+.son-image-d2-1 {
+    position: absolute;
+    top: -80px;
+    left: -850px;
+}
+
+.son-image-d1-2 {
+    position: absolute;
+    top: 20px;
+    left: 845px;
+}
+.son-image-d2-2 {
+    position: absolute;
+    top: 20px;
+    left: -850px;
+}
+
+.son-image-d1-3 {
+    position: absolute;
+    top: 120px;
+    left: 845px;
+}
+.son-image-d2-3 {
+    position: absolute;
+    top: 120px;
+    left: -850px;
+}
+
+.son-image-d1-4 {
+    position: absolute;
+    top: 220px;
+    left: 845px;
+}
+.son-image-d2-4 {
+    position: absolute;
+    top: 220px;
+    left: -850px;
+}
+
+.son-image-d1-5 {
+    position: absolute;
+    top: 320px;
+    left: 845px;
+}
+.son-image-d2-5 {
+    position: absolute;
+    top: 320px;
+    left: -850px;
+}
 .card {
     padding: 5px;
     background: #28275B;
