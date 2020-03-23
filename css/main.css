@@ -23,6 +23,11 @@
     /* min-height: 500px; tamanio minimo */
 }
 
+.bottom-bar {
+    background: #28275B;
+    /* min-height: 500px; tamanio minimo */
+}
+
 .color-text-1 {
     color: #28275B;
 }
@@ -54,6 +59,16 @@
     line-height: 45px;
     /* identical to box height */
     color: #20B8D6;
+}
+
+.bottom-bar-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: semi-bold;
+    font-size: 12px;
+    line-height: 117%;
+    /* identical to box height */
+    color: white;
 }
 
 .quote-text {
