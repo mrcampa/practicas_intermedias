@@ -173,6 +173,43 @@
     top: 320px;
     left: -850px;
 }
+
+.white-dots1{
+    position: relative;
+    top: -65px;
+    left: 900px;
+}
+
+.white-dots2{
+    position: relative;
+    top: -70px;
+    left: 770px;
+}
+
+.frame2-news1{
+    position: absolute;
+    top: -40px;
+    left: 150px;
+}
+
+.frame2-news2{
+    position: absolute;
+    top: -55px;
+    left: -200px;
+}
+
+.frame2-news3{
+    position: absolute;
+    top: 0px;
+    left: 650px;
+}
+
+.blue-dots{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
 .card {
     padding: 5px;
     background: #28275B;
