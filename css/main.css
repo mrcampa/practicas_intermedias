@@ -47,6 +47,21 @@ h1{
     line-height: 117%;
 }
 
+h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+}
+
 .tec-title{
     text-align: left;
     vertical-align: text-top;
@@ -301,7 +316,7 @@ h1{
     color: #FFFFFF;
 }
 
-.card-body p {
+.card-body{
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
