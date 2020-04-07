@@ -89,6 +89,18 @@ p{
     /* min-height: 500px; tamanio minimo */
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #20B8D6;
+}
+
+.carousel-indicators li{
+    background-color: #20B8D6;
+}
+
+.carousel-indicators .active{
+    background-color: #28275B;
+}
+
 .color-text-1 {
     color: #28275B;
 }
