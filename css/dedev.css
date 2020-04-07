@@ -1,0 +1,263 @@
+.navbar {
+    /*box-shadow: 2px 2px 5px #000; 
+    opacity: 0.9;   barra de difuminacion */
+    background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    color: #28275B;
+}
+
+.main-header {
+    background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
+    /* min-height: 500px; tamanio minimo */
+}
+
+.section-blue-to-sky {
+    background: linear-gradient(to right, #28275B 0%, #28275B 65%, #D5E3EC 50%, #D5E3EC 100%);
+    /* min-height: 500px; tamanio minimo */
+}
+
+.bottom-bar {
+    background: #28275B;
+    /* min-height: 500px; tamanio minimo */
+}
+
+.color-text-1 {
+    color: #28275B;
+}
+
+.color-text-2 {
+    color: #20B8D6;
+}
+
+.col-md-3 .card:hover {
+    transform: translate(-20px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.diplo-1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #28275B;
+}
+
+.row-section-bs {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #20B8D6;
+}
+
+.bottom-bar-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: semi-bold;
+    font-size: 12px;
+    line-height: 117%;
+    /* identical to box height */
+    color: white;
+}
+
+.quote-text {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: semi-bold;
+    font-size: 20px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #01BEDB;
+}
+
+.regular-text{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+/*image positioning test
+    relative positions; parenting
+*/
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.son-image1 {
+    position: relative;
+    top: -12px;
+    left: 33px;
+}
+.son-image2 {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+}
+.son-image3 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.son-image4 {
+    position: absolute;
+    top: -80px;
+    left: 390px;
+}
+
+.son-image-d1-1 {
+    position: absolute;
+    top: -80px;
+    left: 845px;
+}
+.son-image-d2-1 {
+    position: absolute;
+    top: -80px;
+    left: -850px;
+}
+
+.son-image-d1-2 {
+    position: absolute;
+    top: 20px;
+    left: 845px;
+}
+.son-image-d2-2 {
+    position: absolute;
+    top: 20px;
+    left: -850px;
+}
+
+.son-image-d1-3 {
+    position: absolute;
+    top: 120px;
+    left: 845px;
+}
+.son-image-d2-3 {
+    position: absolute;
+    top: 120px;
+    left: -850px;
+}
+
+.son-image-d1-4 {
+    position: absolute;
+    top: 220px;
+    left: 845px;
+}
+.son-image-d2-4 {
+    position: absolute;
+    top: 220px;
+    left: -850px;
+}
+
+.son-image-d1-5 {
+    position: absolute;
+    top: 320px;
+    left: 845px;
+}
+.son-image-d2-5 {
+    position: absolute;
+    top: 320px;
+    left: -850px;
+}
+
+.white-dots1{
+    position: relative;
+    top: -65px;
+    left: 900px;
+}
+
+.white-dots2{
+    position: relative;
+    top: -70px;
+    left: 770px;
+}
+
+.frame2-news1{
+    position: absolute;
+    top: -40px;
+    left: 150px;
+}
+
+.frame2-news2{
+    position: absolute;
+    top: -55px;
+    left: -200px;
+}
+
+.frame2-news3{
+    position: absolute;
+    top: 0px;
+    left: 650px;
+}
+
+.blue-dots{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.card {
+    padding: 5px;
+    background: #28275B;
+    border-radius: 19px;
+}
+
+.card-body h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 116.32%;
+    /* or 16px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-body p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 116.32%;
+    /* or 16px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-body a {
+    position: relative;
+    display: inline-block;
+    /* coloca en una linea de cuadros la informacion */
+    color: #fff;
+    /* agrega el color de fondo de la letra */
+    text-decoration: none;
+    /* Elimina las decoraciones del texto */
+    border: 1px solid #fff;
+    /* agrega el border del contenedor */
+    padding: 1px;
+    /* Agrega espacion entre el contenido y el contenedor */
+    margin-bottom: 5px;
+    /* siempre coloca un margen de 10px entre el y su elemento interior */
+    width: 150px;
+    /* le da un ancho estatico de 150 px */
+}
+
+.card-body a:hover {
+    /* agrega css, en el evento */
+    background: #23B9D7;
+    color: #111;
+}
