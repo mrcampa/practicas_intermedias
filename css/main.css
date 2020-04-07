@@ -1,10 +1,26 @@
-.navbar {
+/* Main-navbar css additional to navbar for not affecting bootstrap css */
+.main-navbar {
     /*box-shadow: 2px 2px 5px #000; 
     opacity: 0.9;   barra de difuminacion */
     background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
 }
+/* tec-navbar css additional to navbar for not affecting bootstrap css */
+.tec-navbar {
+    /*box-shadow: 2px 2px 5px #000; 
+    opacity: 0.9;   barra de difuminacion */
+    background: linear-gradient(to right, #28275B 0%, #28275B 65%, #D5E3EC 50%, #D5E3EC 100%);
+}
 
-.navbar .navbar-nav .nav-link {
+.tec-navbar .tec-navbar-nav .tec-nav-link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.main-navbar .main-navbar-nav .main-nav-link {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -12,10 +28,40 @@
     line-height: 19px;
     color: #28275B;
 }
-
+/* Header css for colors repeatedd in headers*/
 .main-header {
     background: linear-gradient(to right, #D5E3EC 0%, #D5E3EC 65%, #28275B 50%, #28275B 100%);
     /* min-height: 500px; tamanio minimo */
+}
+
+.tec-header {
+    background: linear-gradient(to right, #28275B 0%, #28275B 65%, #D5E3EC 50%, #D5E3EC 100%);
+    /* min-height: 500px; tamanio minimo */
+}
+
+h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 117%;
+}
+
+.tec-title{
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.tec-cite{
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    /* identical to box height */
+    color: #28275B;
+    position: absolute;
+    top: 300px;
+    left: 880px;
 }
 
 .section-blue-to-sky {
@@ -34,6 +80,10 @@
 
 .color-text-2 {
     color: #20B8D6;
+}
+
+.color-text-3 {
+    color: #FFFFFF;
 }
 
 .col-md-3 .card:hover {
@@ -64,7 +114,7 @@
 .bottom-bar-text{
     font-family: Poppins;
     font-style: normal;
-    font-weight: semi-bold;
+    font-weight: 600;
     font-size: 12px;
     line-height: 117%;
     /* identical to box height */
@@ -74,7 +124,7 @@
 .quote-text {
     font-family: Lato;
     font-style: italic;
-    font-weight: semi-bold;
+    font-weight: 600;
     font-size: 20px;
     line-height: 45px;
     /* identical to box height */
@@ -208,6 +258,30 @@
     position: absolute;
     top: -30px;
     left: -30px;
+}
+
+.tec-vertline{
+    position: absolute;
+    top: -210px;
+    left: -30px;
+}
+
+.tec-minidot{
+    position: absolute;
+    top: -240px;
+    left: -40px;
+}
+
+.tec-rombo{
+    position: absolute;
+    top: -90px;
+    left: 860px;
+}
+
+.av-phonegirl{
+    position: absolute;
+    top: 0px;
+    left: 950px;
 }
 
 .card {
