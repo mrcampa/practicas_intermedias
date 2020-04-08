@@ -101,6 +101,15 @@ p{
     background-color: #28275B;
 }
 
+/* inactive pill */
+.nav-pills .pill-co .nav-link:not(.active) {
+    background-color: transparent;
+}
+/* active pill */
+.nav-pills .pill-co .nav-link {
+    background-color: #20B8D6;
+}
+
 .color-text-1 {
     color: #28275B;
 }
