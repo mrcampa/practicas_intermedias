@@ -6,11 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DEVED</title>
+    <style>
+        .box{
+            color: #fff;
+            padding: 20px;
+            display: none;
+            margin-top: 20px;
+        }
+        .v1{ background: #ff0000; }
+        .v2{ background: #228B22; }
+        .v3{ background: #0000ff; }
+        label{ margin-right: 15px; }
+    </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/herbert2.css">
+    <link rel="stylesheet" href="css/herbert.scss">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+
+        function updateTextInput(val) {
+            var targetBox = $(".v" + val);
+                console.log(targetBox);
+                $(".box").not(targetBox).hide();
+                $(targetBox).show();
+        }
+        </script>
 </head>
 
 <body>
@@ -92,6 +117,27 @@
             </div>
         </div>
     </header>
+<br>
+    <div>
+        <ul class="range-labels">
+            <li>      <img src="img/herbert/Facultad.png" width="90" height="70" alt=""></li>
+            <li>      <img src="img/herbert/Escuela.png" width="90" height="70" alt=""></li>
+            <li>      <img src="img/herbert/Centros.png" width="120" height="70" alt=""></li>
+            <li>      <img src="img/herbert/Unidades.png" width="120" height="70" alt=""></li>
+
+          </ul>
+    
+        <div class="range">
+            <input type="range" id="myRange" min="1" max="4" steps="1" onchange="updateTextInput(this.value);" >
+          </div>
+    
+
+    </div>
+
+    <div class="v1 box">You have selected <strong>red radio button</strong> so i am here</div>
+    <div class="v2 box">You have selected <strong>green radio button</strong> so i am here</div>
+    <div class="v3 box">You have selected <strong>blue radio button</strong> so i am here</div>
+
     <script src="jquery/js/jquery-3.4.1.min.js"></script>
     <script src="popper/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
