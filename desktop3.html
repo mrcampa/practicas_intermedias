@@ -7,16 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DEVED</title>
     <style>
+        * {
+  box-sizing: border-box;
+}
         .box{
             color: #fff;
             padding: 20px;
             display: none;
             margin-top: 20px;
         }
-        .v1{ background: #ff0000; }
-        .v2{ background: #228B22; }
-        .v3{ background: #0000ff; }
+
         label{ margin-right: 15px; }
+
+        @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
     </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/keyframes.css">
@@ -39,6 +47,7 @@
 </head>
 
 <body>
+
     <!-- Inicio Menú - navbar de bootstrap  fixed-top-->
     <nav class="navbar main-navbar navbar-expand-lg navbar-light bg-light">
         <!-- con "fixed-top" se queda estaticamente arriba-->
@@ -91,7 +100,8 @@
                 <div class="row">
                     <div class="col-md-5 text-center justify-content-center align-self-center">
                         <h1><span class="color-text-1">AULAS VIRTUALES</span></h1>
-                        <img src="img/phonegirl.png" alt="mujer_en_celular" class="float-right d-sm-block av-phonegirl">
+                        <img src="img/phonegirl.png" alt="mujer_en_celular" style="z-index: 3; position: absolute;bottom:-360px; left:200%;">
+                        <img src="img/herbert/circulos.png" style="z-index: 4; position: absolute;bottom:-380px; left:234%;">
                     </div>
                 </div>
                 <br>
@@ -119,25 +129,337 @@
     </header>
 <br>
     <div>
-        <ul class="range-labels">
-            <li>      <img src="img/herbert/Facultad.png" width="90" height="70" alt=""></li>
-            <li>      <img src="img/herbert/Escuela.png" width="90" height="70" alt=""></li>
-            <li>      <img src="img/herbert/Centros.png" width="120" height="70" alt=""></li>
-            <li>      <img src="img/herbert/Unidades.png" width="120" height="70" alt=""></li>
+        <ul  class="range-labels">
+            <li style="left: 1%;">      <img src="img/herbert/Facultad.png" width="90" height="70" alt=""></li>
+            <li style="left: 2.6%;">      <img src="img/herbert/Escuela.png" width="90" height="70" alt=""></li>
+            <li style="left: 3.5%;">      <img src="img/herbert/Centros.png" width="120" height="70" alt=""></li>
+            <li style="left: 5%;">      <img src="img/herbert/Unidades.png" width="120" height="70" alt=""></li>
 
           </ul>
     
         <div class="range">
-            <input type="range" id="myRange" min="1" max="4" steps="1" onchange="updateTextInput(this.value);" >
+            <input style="left: 6%;" type="range" id="myRange" min="1" max="4" steps="1" onchange="updateTextInput(this.value);">
           </div>
     
 
     </div>
 
-    <div class="v1 box">You have selected <strong>red radio button</strong> so i am here</div>
-    <div class="v2 box">You have selected <strong>green radio button</strong> so i am here</div>
-    <div class="v3 box">You have selected <strong>blue radio button</strong> so i am here</div>
+    <div class="v1 box">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://campusv.farusac.edu.gt/" target="_blank">
+                    <img src="img/herbert/Arquitectura.PNG"style="width: 45%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/facultad-de-arquitectura/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <br>
+            <div class="col-sm-4">
+                <a href="https://economicas.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/Economicas.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/facultad-de-ciencias-economicas/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
 
+
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://radd6.virtual.usac.edu.gt/cienciasmedicas/" target="_blank">
+                    <img src="img/herbert/medicina.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/facultad-de-ciencias-medicas/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://ccqqfar.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/farmacia.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/facultad-de-ciencias-quimicas-y-farmacia/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://ingenieria.virtual.usac.edu.gt/login/index.php" target="_blank">
+                    <img src="img/herbert/Ingenieria.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/facultad-de-ingenieria/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+
+
+        </div>
+
+    
+
+    </div>
+    <div class="v2 box">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://psicologia.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/Psicologia.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/escuela-de-ciencias-psicologicas/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <br>
+            <div class="col-sm-4">
+                <a href="https://ccqqfarpostgrado.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/farmaciapost.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/escuela-de-estudios-de-postgrado-facultad-de-ciencias-quimicas-y-farmacia/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://epo.virtual.usac.edu.gt/login/index.php" target="_blank">
+                    <img src="img/herbert/odontopost.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/escuela-de-estudios-de-postgrado-facultad-de-odontologia/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://ccqqfar.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/trabajo.PNG"  style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/escuela-de-trabajo-social/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+          
+
+        </div>
+
+    </div>
+    <div class="v3 box">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://cunprogreso.virtual.usac.edu.gt/login/index.php" target="_blank">
+                    <img src="img/herbert/cunpro.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/centro-universitario-de-el-progreso/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <br>
+            <div class="col-sm-4">
+                <a href="https://cunor.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/cunor.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/centro-universitario-del-norte/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://jusac.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/jusac.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/centro-universitario-de-jutiapa/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            
+          
+
+        </div>
+
+    </div>
+    <div class="v4 box">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://cema.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/cemar.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/centro-de-estudios-del-mar-y-acuicultura-cema/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <br>
+            <div class="col-sm-4">
+                <a href="https://cgsep.virtual.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/coordinadora.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/coordinadora-general-sistema-de-estudios-de-postgrado/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://pfdiged.usac.edu.gt/" target="_blank">
+                    <img src="img/herbert/programa.PNG"style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/programa-de-formacion-docente/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://diged.usac.edu.gt/sfpu/" target="_blank">
+                    <img src="img/herbert/sistema.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/sistema-de-formacion-del-profesor-universitario/" target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://virtual.usac.edu.gt/ev/" target="_blank">
+                    <img src="img/herbert/unidad.PNG" style="width: 40%;height: auto; position: relative;left:11%;top:5%;z-index: 3;">>
+                </a>
+                
+                <a href="https://virtual.usac.edu.gt/unidad-de-educacion-virtual/   " target="_blank">
+                    <button onmouseover="this.style.color='white';this.style.backgroundColor='#275BA6'" onmouseout="this.style.color=''; this.style.backgroundColor='white'"
+                    style="width: 40%;height: auto;  position: relative;left:-31%;top:51%;z-index: 2;background-color: white;color:#275BA6;border-color: #275BA6;">
+                    Catalogo de Cursos</button>
+                </a>
+                
+                <img src="img/herbert/Barra_Logo.png" style="width: 10%; position: relative; top: 6%;left:-56.3%; z-index: 1;">
+            </div>
+
+
+        </div>
+
+
+
+  
+
+
+    </div>
+
+    <div><br> <br></div>
+    <section class="bottom-bar">
+        <div class="container">
+          <div class="row py-5 diplo-1">
+            <div class="col">
+              <img src="img/bottombardots.png" alt="dots_frame" class="img-fluid d-none d-sm-block">
+            </div>
+            <div class="col">
+              <a href="#"><img src="img/bottombardevev.png" alt="dots_frame" class="img-fluid d-none d-sm-block"></a>
+            </div>
+            <div class="col">
+              <a href="#"><span class="bottom-bar-text">QUIÉNES SOMOS</span></a>
+            </div>
+            <div class="col">
+              <a href="#"><span class="bottom-bar-text">CONTACTO</span></a>
+            </div>
+            <div class="col">
+              <a href="#"><span class="bottom-bar-text">PREGUNTAS FRECUENTES</span></a>
+            </div>
+            <div class="col">
+              <img src="img/bottombardots.png" alt="dots_frame" class="img-fluid d-none d-sm-block">
+            </div>
+          </div>
+        </div>
+      </section>
     <script src="jquery/js/jquery-3.4.1.min.js"></script>
     <script src="popper/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

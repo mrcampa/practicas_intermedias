@@ -9,6 +9,16 @@
 line-height: 20px;
 }
 
+.boton_d3{
+    background-color: white;
+    color:#275BA6;
+    border-color: #275BA6;
+
+}
+.boton_d3:hover{
+    background-color: yellow;
+}
+
 .puntos_b1{
     position: absolute;
     left: 10%;
@@ -47,6 +57,8 @@ line-height: 20px;
     left:33%;    
     z-index: 3;
 }
+
+
 
 .puntos_b3{
     position: relative;
