@@ -42,7 +42,7 @@ line-height: 20px;
 
 .puntosd7{
     position: absolute;
-    left: 85.5%;
+    left: 96%;
     top: -10%;
     max-width:41%;
     height:auto;
@@ -51,10 +51,10 @@ line-height: 20px;
 
 .ipad{
     position: relative;
-    max-width:120%;
+    max-width:100%;
     height:auto;
     top: 5%;
-    left:33%;    
+    left:45%;    
     z-index: 3;
 }
 
@@ -62,14 +62,14 @@ line-height: 20px;
 
 .puntos_b3{
     position: relative;
-    left: 37%;
+    left: 48%;
     top:38%;
     height:auto;
 }
 
 .puntos_b2{
     position: relative;
-    left: 87%;
+    left: 100%;
     top:48%;
     height:auto;
 }
@@ -404,3 +404,10 @@ color: #275BA6;
     color: #111;
 }
 
+.main-header-gradiente {
+    background: linear-gradient(to right,#28275B 0%, #28275B 55%, #D5E3EC  50%, #D5E3EC 100%);
+}
+
+.noticias-gradiente {
+    background: #D5E3EC 100%;
+}
