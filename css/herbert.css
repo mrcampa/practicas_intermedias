@@ -1,3 +1,36 @@
+.features .card-back-sec {
+    position: relative;
+    height: 100%;
+    width: auto;
+    border: 1px solid rgb(213, 227, 236);
+    background: rgb(213, 227, 236);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.features .card-body img {
+    position: relative;
+    padding: 10%;
+    width: 100%;
+}
+
+.card-body h2 {
+    color: #28275B;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.card-body p {
+    color: #28275B;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 .parrafo_especial{
     text-align: justify; 
     color: black; 
@@ -7,6 +40,93 @@
     letter-spacing: -0.045em;
     font-size: 14px;
 line-height: 20px;
+}
+.features .ubication1 {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: 1;
+}
+
+.features .ubication2 {
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    z-index: 1;
+}
+
+.features .ubication3 img {
+    position: relative;
+    width: 95%;
+    left: 5%;
+}
+
+.features .card-body a {
+    position: relative;
+    color: #ffffff;
+    top: -10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    background: #23B9D7;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.features .ubication3,
+.card-body a {
+    visibility: hidden;
+}
+
+.features .row .col-md-2:hover .card-back-sec {
+    position: relative;
+    height: 200%;
+    width: 200%;
+    left: -10%;
+    top: -10%;
+    border-radius: 19px;
+    background-color: #28275B;
+    background-image: url('../img/cardfond.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    z-index: 2;
+}
+
+.features .row .col-md-2:hover .card-back-sec h2,
+.features .row .col-md-2:hover .card-back-sec p {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 116.32%;
+    text-align: center;
+}
+
+.features .row .col-md-2 .card-back-sec:hover a {
+    visibility: visible;
+}
+
+.features .row .col-md-2:hover .ubication3 {
+    position: relative;
+    visibility: visible;
+}
+
+.features .row .col-md-2:hover .ubication1,
+.features .row .col-md-2:hover .ubication2 {
+    visibility: hidden;
+}
+
+.card-body a:hover {
+    /* agrega css, en el evento */
+    color: #28275B;
+    background: #ffffff;
 }
 
 .boton_d3{
