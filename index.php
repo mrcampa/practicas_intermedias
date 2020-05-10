@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DEVED</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <?php wp_head(); ?>
-</head>
-
+<?php get_header(); ?>
 <body>
     <!-- Inicio Menú - navbar de bootstrap  fixed-top-->
     <nav class="navbar main-navbar navbar-expand-lg navbar-light bg-light navbar-gradiente">
@@ -253,10 +243,6 @@
         </div>
     </section>
     <!-- END ABOUT -->
-
-
-
-
     <section>
         <div class="container ">
             <div class="row py-5 diplo-1 ">
@@ -266,36 +252,6 @@
             </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1">
-                    <img src="http://localhost/proyectos/wordpress/wp-content/uploads/2020/05/bottombardots.png" alt="bottombardots" class="img_fluid">
-                </div>
-                <div class="col-md-1 px-5 py-1">
-                    <img src="http://localhost/proyectos/wordpress/wp-content/uploads/2020/05/bottombardevev.png" alt="bottombardots" class="img_fluid">
-                </div>
-                <div class="col-md-6">
-                    <a href="#">¿QUIÉNES SOMOS?</a>
-                    <a href="#">CONTACTO</a>
-                    <a href="#">PREGUNTAS FRECUENTES</a>
-                </div>
-                <div class="col-md-2">
-                    <img src="http://localhost/proyectos/wordpress/wp-content/uploads/2020/05/mediasocial.png" alt="mediasocial" class="img_fluid">
-                </div>
-                <div class="col-md-1">
-                    <img src="http://localhost/proyectos/wordpress/wp-content/uploads/2020/05/bottombardots.png" alt="bottombardots" class="img_fluid">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="jquery/js/jquery-3.4.1.min.js "></script>
-    <script src="popper/js/popper.min.js "></script>
-    <script src="bootstrap/js/bootstrap.min.js "></script>
-    <script src="js/index.js "></script>
-    <?php wp_footer(); ?>
 </body>
-
+<?php get_footer(); ?>
 </html>
